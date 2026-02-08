@@ -1,6 +1,19 @@
 import java.util.Scanner;
 
 public class StudentUtilityApp {
+
+    public static void addTwoNumbers(Scanner input){
+        System.out.println("Enter the first number: ");
+        int num1 = input.nextInt();
+
+        System.out.println("Enter the second number: ");
+        int num2 = input.nextInt();
+
+        int result =num1 + num2;
+        System.out.println("Result = " + result);
+
+    }
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -18,6 +31,7 @@ public class StudentUtilityApp {
 
             if (choice == 1) {
                 System.out.println("You selected: Add Two Numbers");
+                addTwoNumbers(input);
             } else if (choice == 2) {
                 System.out.println("You selected: Check EVEN or ODD");
             } else if (choice == 3) {
