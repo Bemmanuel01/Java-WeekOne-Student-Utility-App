@@ -13,6 +13,13 @@ public class StudentUtilityApp {
         System.out.println("Result = " + result);
 
     }
+    public static void checkEvenOrOdd(Scanner input){
+        System.out.println("Enter a number: ");
+        int number = input.nextInt();
+
+        String answer = (number % 2 == 0)? "EVEN": "ODD";
+        System.out.println("The number is an " + answer + " number.");
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -34,6 +41,7 @@ public class StudentUtilityApp {
                 addTwoNumbers(input);
             } else if (choice == 2) {
                 System.out.println("You selected: Check EVEN or ODD");
+                checkEvenOrOdd(input);
             } else if (choice == 3) {
                 System.out.println("You selected: Print Numbers from 1 to N");
             } else if (choice == 4) {
