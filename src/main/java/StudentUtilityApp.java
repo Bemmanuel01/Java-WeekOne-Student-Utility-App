@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class StudentUtilityApp {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int choice;
+
+        do {
+            System.out.println("\n=== JAVA STUDENT UTILITY APP ===");
+            System.out.println("1. Add Two Numbers.");
+            System.out.println("2. Check for EVEN or ODD Numbers. ");
+            System.out.println("3. Print a Number from 1 to N.");
+            System.out.println("4. Display day of the Week.");
+            System.out.println("5. Exit");
+
+            choice = input.nextInt();
+
+            if (choice == 1) {
+                System.out.println("You selected: Add Two Numbers");
+            } else if (choice == 2) {
+                System.out.println("You selected: Check EVEN or ODD");
+            } else if (choice == 3) {
+                System.out.println("You selected: Print Numbers from 1 to N");
+            } else if (choice == 4) {
+                System.out.println("You selected: Display Day of the Week");
+            } else if (choice == 5) {
+                System.out.println("Thank you for using the app.");
+            } else {
+                System.out.println("Invalid choice. Please try again.");
+            }
+
+        } while (choice !=5);
+        input.close();
+    }
+}
