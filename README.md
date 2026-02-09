@@ -115,3 +115,6 @@ e.g Option 1 "Add Two Numbers."
 
 ## Conclusion
 This project serves as a foundational Java application that reinforces essential programming concepts. It provides a strong base for understanding more advanced topics such as object-oriented programming, exception handling, and file operations in Java.
+
+## Author
+Benjamin Emmanuel
