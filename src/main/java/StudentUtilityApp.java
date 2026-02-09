@@ -20,6 +20,14 @@ public class StudentUtilityApp {
         String answer = (number % 2 == 0)? "EVEN": "ODD";
         System.out.println("The number is an " + answer + " number.");
     }
+    public static void printNumbers(Scanner input){
+        System.out.println("Enter a number N: ");
+        int n = input.nextInt();
+
+        for(int i=1; i<=n; i++){
+            System.out.print(i);
+        }
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -44,6 +52,7 @@ public class StudentUtilityApp {
                 checkEvenOrOdd(input);
             } else if (choice == 3) {
                 System.out.println("You selected: Print Numbers from 1 to N");
+                printNumbers(input);
             } else if (choice == 4) {
                 System.out.println("You selected: Display Day of the Week");
             } else if (choice == 5) {
