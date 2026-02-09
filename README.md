@@ -94,6 +94,7 @@ javac StudentUtilityApp.java
 ---
 ## Sample Output
 1. Menu of the app
+
 ![img_1.png](img_1.png)
 
 2. Option Selection and Operations.
