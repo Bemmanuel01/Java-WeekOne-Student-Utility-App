@@ -28,6 +28,37 @@ public class StudentUtilityApp {
             System.out.print(i);
         }
     }
+    public static void displayDayOfWeek(Scanner input){
+        System.out.println("Enter a number from 1 to 7: ");
+
+        int day = input.nextInt();
+
+        switch (day){
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Please select a valid day of the week..!");
+        }
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -37,7 +68,7 @@ public class StudentUtilityApp {
         do {
             System.out.println("\n=== JAVA STUDENT UTILITY APP ===");
             System.out.println("1. Add Two Numbers.");
-            System.out.println("2. Check for EVEN or ODD Numbers. ");
+            System.out.println("2. Check for EVEN or ODD Numbers.");
             System.out.println("3. Print a Number from 1 to N.");
             System.out.println("4. Display day of the Week.");
             System.out.println("5. Exit");
@@ -54,9 +85,10 @@ public class StudentUtilityApp {
                 System.out.println("You selected: Print Numbers from 1 to N");
                 printNumbers(input);
             } else if (choice == 4) {
-                System.out.println("You selected: Display Day of the Week");
+                System.out.println("You selected: Display Day of the Week.");
+                displayDayOfWeek(input);
             } else if (choice == 5) {
-                System.out.println("Thank you for using the app.");
+                System.out.println("Thank you for using the app..!");
             } else {
                 System.out.println("Invalid choice. Please try again.");
             }
