@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class StudentUtilityApp {
-
+    // This method adds two numbers.
     public static void addTwoNumbers(Scanner input){
         System.out.println("Enter the first number: ");
         int num1 = input.nextInt();
@@ -13,6 +13,7 @@ public class StudentUtilityApp {
         System.out.println("Result = " + result);
 
     }
+    //This method checks if a number is an EVEN or ODD number.
     public static void checkEvenOrOdd(Scanner input){
         System.out.println("Enter a number: ");
         int number = input.nextInt();
@@ -20,6 +21,7 @@ public class StudentUtilityApp {
         String answer = (number % 2 == 0)? "EVEN": "ODD";
         System.out.println("The number is an " + answer + " number.");
     }
+    //This method prompts the user to print numbers from 1 to N.
     public static void printNumbers(Scanner input){
         System.out.println("Enter a number N: ");
         int n = input.nextInt();
@@ -28,6 +30,7 @@ public class StudentUtilityApp {
             System.out.print(i);
         }
     }
+    //This method displays the day of the Week. Where 1 = Monday, 2 = Tuesday and so on...
     public static void displayDayOfWeek(Scanner input){
         System.out.println("Enter a number from 1 to 7: ");
 
@@ -59,7 +62,7 @@ public class StudentUtilityApp {
                 System.out.println("Please select a valid day of the week..!");
         }
     }
-
+    // This is here the program starts running. It displays the Menu of the app.
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
