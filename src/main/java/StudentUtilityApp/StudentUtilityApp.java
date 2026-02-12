@@ -1,3 +1,5 @@
+package StudentUtilityApp;
+
 import java.util.Scanner;
 
 public class StudentUtilityApp {
